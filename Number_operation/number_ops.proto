@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package com.number.operation;
+
+service DataRetrival{
+  rpc inputData(InputNos) returns (Output){}
+} 
+
+message InputNos{
+  int32 a = 1;
+  int32 b = 2;
+}
+
+message Output{
+   int32 square1 = 1;
+   int32 square2 = 2;
+   int32 addition = 3;
+   int32 multiply = 4;
+}
