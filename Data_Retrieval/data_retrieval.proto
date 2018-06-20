@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package com.data.retrieval;
+
+service DataRetrival{
+  rpc setData(Employee) returns (ResponseMsg){}
+  rpc getData(Version) returns (EmployeeList){}
+} 
+
+message EmployeeList{
+  repeated int32 emp_id = 1;
+  repeated string name = 2;
+  repeated string designation = 3;
+}
+
+message Employee{
+   int32 emp_id = 1;
+   string name = 2;
+   string designation = 3;
+}
+
+message ResponseMsg{
+  string msg = 1;
+}
+
+
+message Version {
+  string version = 1;
+}
+
