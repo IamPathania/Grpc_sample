@@ -16,10 +16,10 @@ class DataRetrival():
         self.emp_desig_list = list()
 
     def setData(self,request,context):
-           print'Server side -- Data in request : ',request
-           print'Name', request.name
-           print'ID', request.emp_id
-           print'Name', request.designation
+           print ('Server side -- Data in request : ',request)
+           # print'Name', request.name
+           # print'ID', request.emp_id
+           # print'Name', request.designation
 
            self.emp_name_list.append(request.name)
            self.emp_id_list.append(request.emp_id)

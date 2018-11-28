@@ -7,9 +7,9 @@ def set_data():
     channel = grpc.insecure_channel('localhost:50051')
     stub = data_retrieval_pb2_grpc.DataRetrivalStub(channel)
 
-    id   =   input('Please enter emp_id:')
-    name = raw_input('Please enter name:')
-    desig = raw_input('Please enter designation:')
+    id   =   int( input('Please enter emp_id:'))
+    name = input('Please enter name:')
+    desig = input('Please enter designation:')
 
     response = stub.setData(data_retrieval_pb2.Employee(emp_id= id, name=name, designation = desig))
     print("Client side -- set_data client service :" , response.msg)
