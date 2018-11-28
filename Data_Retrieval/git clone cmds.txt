@@ -1,0 +1,37 @@
+git init
+
+git clone https://OHR:PWD@bitbucket.pvai.com/scm/pvai/xce_protos.git 
+
+git checkout <branch_name>
+
+Do watever change you want to do
+
+git add .
+git status
+git commit -m "Event Learning Configurator"
+git push origin master
+
+git branch -a shows both remote and local branches.
+git branch -r shows remote branches.
+
+
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging  
+
+git branch (branchname)
+
+git remote add origin https://github.com/IamPathania/Grpc_sample.git
+
+git fetch origin ----------- to show newly created branch
+
+git rm --cached heatmap/load_redis_data_to_DB.py
+
+git checkout -b branch name   ------- to create new branch from curent branch.
+
+*********************************************************************************
+Pull request
+
+git request-pull [-p] <start> <url> [<end>]
+-p ——— Include patch text in the output.
+<start> ——— Commit to start at. This names a commit that is already in the upstream history.
+<url> ——— The repository URL to be pulled from.
+<end> ——— Commit to end at (defaults to HEAD). This names the commit at the tip of the history you are asking to be pulled.

@@ -1,0 +1,24 @@
+pip install --trusted-host pypi.python.org packagename
+protoc -I=. --python_out=. helloworld.proto
+
+protoc -I ./ --python_out=. --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_python_plugin` ./custom_net_inference.proto
+
+python -m grpc_tools.protoc --python_out=./services_impl --grpc_python_out=./services_impl  -I
+ /home/pankaj.rawat3/xce_sparkbeyond/sb_services/protofiles/sb_proto.proto -I /home/pankaj.rawat3/xce_protos/services 
+ /home/pankaj.rawat3/xce_sparkbeyond/sb_services/protofiles/sb_proto.proto 
+
+python -m grpc_tools.protoc --python_out=. --grpc_python_out=. -I . helloworld.proto
+
+https://docker-curriculum.com/
+
+https://sambitach.wordpress.com/2016/01/26/3-ways-to-perform-named-entity-recognition-in-python/ - NER techniques
+
+https://www.tutorialspoint.com/git/git_environment.htm
+
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
+https://www.edureka.co/blog/interview-questions/python-interview-questions/ - Python Questions
+
+https://www.youtube.com/watch?v=IQfG0faDrzE - Apache spark
+
+pankajr141

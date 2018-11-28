@@ -1,0 +1,40 @@
+export PYTHONPATH=/home/703134969/xce_e2b_parsing:/home/703134969/xce_e2b_parsing/e2b_parsing/
+F5 -  to select file in Winscp
+rpm -ivh - to run a rpm package
+rpm -qa --last
+sudo du -sh *
+rm -rf xce_scoring - remove directory
+cp -r folder1 folder_n destination path
+ 
+unzip '*.zip' -d /home/user/folder/
+find . -name "*.bak" -delete
+
+du -sh /bayer-data2/  ---------------size of a dir
+
+sudo pip install opencv-python opencv-contrib-python
+
+aws s3 mb s3://bucket-name --- to create bucket
+aws s3 rb s3://bucket-name --- to remove empty bucket
+aws s3 ls s3://bucket-name --- to open s3 bucket
+
+aws s3 ls
+aws s3 ls | grep -i emr -- to search particular word
+aws s3 cp folder1 folder_n s3://pvai-product-poc-aws-emr  --recursive
+
+aws s3api delete-objects --bucket pvai-product-poc-aws-emr --delete '{"Objects":[{"Key":"*.pdf"}]}'
+aws s3 rm s3://pvai-product-poc-aws-emr/ --recursive   ---------------- to delete all files
+
+aws s3 cp ~/this_directory s3://bucketname/this_directory --recursive
+aws s3 cp /home/hadoop/form_pdfs s3://pvai-product-poc-aws-emr/form_pdfs --recursive
+
+
+--master yarn --deploy-mode cluster
+check this -> https://unix.stackexchange.com/questions/106122/mount-nfs-access-denied-by-server-while-mounting-on-ubuntu-machines
+
+mount -t nfs 10.12.2.127:/nfsshare /nfsshare
+sudo chown -R hadoop:hadoop /nfsshare 
+
+yarn logs --applicationId appId  ----- to view logs
+
+docker ps -a   --------------to check al docker images running on server
+
